@@ -1,0 +1,29 @@
+/* Add these styles to your CSS file or use a CSS-in-JS solution */
+
+#sidebar {
+  width: 200px; /* Set your desired fixed width */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: left 0.3s ease;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebarToggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+#content {
+  margin-left: 200px; /* Adjust margin to accommodate the sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+#content.closed {
+  margin-left: 0;
+}
